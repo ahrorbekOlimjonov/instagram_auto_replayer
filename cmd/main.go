@@ -15,7 +15,7 @@ const (
 func main() {
 	http.HandleFunc("/webhook", handleWebhook)
 	log.Println("🌐 Webhook server is running on port 8080...")
-	log.Fatal(http.ListenAndServe(":8080", nil))
+	log.Fatal(http.ListenAndServe("localhost:8080", nil))
 }
 
 func handleWebhook(w http.ResponseWriter, r *http.Request) {
