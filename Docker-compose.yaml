@@ -10,3 +10,4 @@ services:
     environment:
       - VERIFY_TOKEN=YOUR_VERIFY_TOKEN
       - PAGE_ACCESS_TOKEN=YOUR_PAGE_ACCESS_TOKEN
+      
