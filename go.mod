@@ -1,6 +1,6 @@
 module projects/instagram_replayer_bot
 
-go 1.23.5
+go 1.20
 
 require github.com/Davincible/goinsta v0.0.0-20220425072628-96aad7267204
 
