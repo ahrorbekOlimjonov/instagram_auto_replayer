@@ -1,0 +1,15 @@
+{
+    "username": "lookat0802",
+    "password": "ao31082004",
+    "config_path": "./.instagram-session",
+    "check_interval_seconds": 60,
+    "response_rules": {
+        "hello": "Hi there! Thanks for reaching out. This is an automated response.",
+        "price": "Thank you for your interest! Our pricing starts at $99. For more details, please visit our website.",
+        "support": "I'll connect you with our support team shortly. For urgent matters, please email support@example.com.",
+        "hours": "We're available Monday to Friday, 9 AM to 5 PM EST."
+    },
+    "default_response": "Thanks for your message! We'll get back to you as soon as possible.",
+    "log_file": "instagram-bot.log",
+    "responded_users_file": "responded_users.json"
+}
