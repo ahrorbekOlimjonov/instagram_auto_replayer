@@ -19,6 +19,7 @@ func main() {
 }
 
 func handleWebhook(w http.ResponseWriter, r *http.Request) {
+	log.Printf("Incoming Webhook: method: %v | url: %v | remoteAddr: %v", r.Method, r.URL.Path, r.RemoteAddr)
 	if r.Method == http.MethodGet {
 		verifyWebhook(w, r)
 		return
@@ -45,7 +46,6 @@ func verifyWebhook(w http.ResponseWriter, r *http.Request) {
 
 	w.WriteHeader(http.StatusForbidden)
 }
-
 
 func handleIncomingMessage(w http.ResponseWriter, r *http.Request) {
 	defer r.Body.Close()
